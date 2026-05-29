@@ -17,7 +17,19 @@ Represents a person who owns or manages vehicles in the DashIQ system.
 * private LocalDateTime createdAt
 * private LocalDateTime updatedAt
 
-### <u>Relationships</ul>
+### <u>Relationships:</u>
 * A User can own many Vehicles. (OneToMany)
 * A User may receive many Notifications. (OneToMany)
 * A User may have many Maintenance Records through their Vehicles. (OneToMany)
+
+### <u>Business Rules:</u>
+* Email is required
+* Email must be unique
+* First name is required
+* Last name is required
+* Phone number is optional for MVP
+* Phone number may be used later for verification and notifications
+
+### <u>MVP NOTES</u>
+
+_For the MVO, the User exits mainly to own vehicle records, Authentication, roles, subscriptions, and marketing preferences are deferred._
