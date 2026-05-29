@@ -13,6 +13,7 @@ Represents a person who owns or manages vehicles in the DashIQ system.
 * private String lastName
 * private String email
   * _@Column(nullable = false, unique = true)_
+* private String password
 * private String phoneNumber
 * private LocalDateTime createdAt
 * private LocalDateTime updatedAt
